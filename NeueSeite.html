@@ -10,21 +10,21 @@
       background-color: Cornsilk;
       color: #182f33;
       margin: 0px;
+      
     }
     
-   p {
-      margin-left: 10px;
-      text-align: left;
-      padding: 0px;
+  
 
       
-   }
+   
    .navi {
       background-color: #FF6347;
       padding: 30px;
       font-size: 50px;
       margin: 0px;
-      text-align: right;
+      text-align: end;
+      
+      
       
    }
 
@@ -37,9 +37,10 @@
    }
    
    img {
-      width: 400px;
+      width: 700px;
       height: auto;
-      border-radius: 48px;
+      border-radius: 20px;
+      
    }
    
    
@@ -57,6 +58,9 @@
     margin: 4px 2px;
     cursor: pointer;
     }
+   button:hover {
+    background-color: #FFE4B5; /*Neue Hintergrundfarbe beim Überfahren mit der Maus*/
+   }
    
    h1 {
     font-size: large;
@@ -65,6 +69,11 @@
     width: auto;
     
    }
+   #image-container {
+      display: flex;
+      justify-content: center;
+    }
+   
    
    
   </style>
@@ -76,11 +85,6 @@
   
     
     <div class="navi">
-     
-      
-  
-
-    
       <button>
         <a href="Home.html"><h1>Home</h1></a>
       </button>
@@ -91,7 +95,8 @@
         <a href="Generator.html"><h1>Generator</h1></a>
       </button>
      
-  </div>
+     
+    </div>
 
   <div class="content">
      Diese Seite sollte nicht verbreitet werden!
@@ -99,13 +104,16 @@
 
   </div>
 
-  <img src="94263.jpg" />
+ 
+ 
 </header>
+<div id="image-container">
+  <img src="bilder/94263.jpg" alt="">
+</div>
  
   
   
  
-  
   
 </body>
 
