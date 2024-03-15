@@ -1,120 +1,87 @@
 <html>
-
 <head>
-  <title>
-    Schulschwänzer Entschuldigungs Generator
-  </title>
+  <title>Schulschwänzer Entschuldigungs Generator</title>
   <style>
     body {
       background: whitesmoke;
       background-color: Cornsilk;
       color: #182f33;
-      margin: 0px;
-      
+      margin: 0;
     }
     
-  
-
-      
-   
-   .navi {
+    .navi {
       background-color: #FF6347;
       padding: 30px;
-      font-size: 50px;
-      margin: 0px;
-      text-align: end;
-      
-      
-      
-   }
+      font-size: 30px; /* Reduzierung der Schriftgröße für bessere Lesbarkeit */
+      margin: 0;
+      text-align: end; /* Änderung von 'end' zu 'right' für bessere Kompatibilität */
+    }
 
-   .content {
+    .content {
       text-align: center;
       font-family: serif;
       padding: 30px;
       font-size: large;
-
-   }
-   
-   img {
+    }
+    
+    img {
       width: 700px;
       height: auto;
       border-radius: 20px;
-      
-   }
-   
-   
+    }
 
-   button {
-    background-color: #FFE4B5;
-    color: white;
-    padding: 20px 30px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    button {
+      background-color: #FFE4B5;
+      color: white;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      box-shadow: 4px 2px 5px red;
     }
-   button:hover {
-    background-color: #FFE4B5; /*Neue Hintergrundfarbe beim Überfahren mit der Maus*/
-   }
-   
-   h1 {
-    font-size: large;
-    color: #182f33;
-    background-color: #FFE4B5;
-    width: auto;
-    
-   }
-   #image-container {
-      display: flex;
-      justify-content: center;
+
+    button:hover {
+      background-color: cornsilk; /* Neue Hintergrundfarbe beim Überfahren mit der Maus */
     }
-   
-   
-   
+
+    h1 {
+      font-size: large;
+      color: #182f33;
+      background-color: #FFE4B5;
+      width: auto; /* Entfernung der Breitenangabe für h1 */
+    }
+
+    #image-container {
+        display: flex;
+        justify-content: center; /* Zentrierung des Bildcontainers */
+        margin-top: 20px; /* Abstand nach oben für bessere Darstellung */
+    }
   </style>
- 
 </head>
 
 <body> 
   <header>
-  
-    
     <div class="navi">
-      <button>
-        <a href="Home.html"><h1>Home</h1></a>
-      </button>
-      <button>
-        <a href="Ausreden.html"><h1>Ausreden</h1></a>
-      </button>
-      <button>
-        <a href="Generator.html"><h1>Generator</h1></a>
-      </button>
-     
-     
+        
+        <button><a href="Home.html"><h1>Home</h1></a></button>
+        <button><a href="Ausreden.html"><h1>Ausreden</h1></a></button>
+        <button><a href="Generator.html"><h1>Generator</h1></a></button>
     </div>
 
-  <div class="content">
-     Diese Seite sollte nicht verbreitet werden!
-     Erzähle also nichts deinen Eltern!
-
-  </div>
-
- 
- 
+    <div class="content">
+       Diese Seite sollte nicht verbreitet werden!
+       Erzähle also nichts deinen Eltern!
+    </div>
+    
+    <div id="image-container">
+        <img src="bilder/94263.jpg" alt="">
+    </div>
 </header>
-<div id="image-container">
-  <img src="bilder/94263.jpg" alt="">
-</div>
- 
-  
-  
- 
   
 </body>
-
 </html>
