@@ -1,0 +1,62 @@
+body {
+    background: whitesmoke;
+    background-color: Cornsilk;
+    color: #182f33;
+    margin: 0;
+  }
+  
+  .navi {
+    background-color: #FF6347;
+    padding: 20px; /* Reduzierung des Abstands für bessere Proportionen */
+    font-size: 30px; /* Reduzierung der Schriftgröße für bessere Lesbarkeit */
+    text-align: right; /* Änderung von 'end' zu 'right' für bessere Kompatibilität */
+  }
+
+  .content {
+    text-align: center;
+    font-family: serif;
+    padding: 30px;
+    font-size: large;
+  }
+  
+  img {
+    width: 700px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  button {
+    background-color: #FFE4B5;
+    color:aqua;
+    padding: 15px 25px; /* Anpassung der Polsterung für ein ausgewogeneres Aussehen */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px; /* Erhöhung des Abstands für bessere Trennung der Buttons */
+    cursor: pointer;
+    box-shadow: 4px 2px 5px red;
+  }
+
+  button:hover {
+    background-color: cornsilk; /* Neue Hintergrundfarbe beim Überfahren mit der Maus */
+  }
+
+  h1 {
+    font-size: large;
+    color: #182f33;
+    background-color: #FFE4B5;
+  }
+
+  p {
+      margin-bottom: 10px; /* Hinzufügen von Abstand zwischen den Absätzen */
+      font-size: 25px;
+  }
+
+  #image-container {
+      display: flex;
+      justify-content: center; /* Zentrierung des Bildcontainers */
+      margin-top: 20px; /* Abstand nach oben für bessere Darstellung */
+  }
