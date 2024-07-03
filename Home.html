@@ -13,7 +13,7 @@
       background-color: #FF6347;
       padding: 20px; /* Reduzierung des Abstands für bessere Proportionen */
       font-size: 30px; /* Reduzierung der Schriftgröße für bessere Lesbarkeit */
-      text-align: right; /* Änderung von 'end' zu 'right' für bessere Kompatibilität */
+      text-align: right; 
     }
 
     .content {
@@ -35,7 +35,7 @@
       padding: 15px 25px; /* Anpassung der Polsterung für ein ausgewogeneres Aussehen */
       border: none;
       border-radius: 5px;
-      text-align: center;
+      text-align: right;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
@@ -68,11 +68,15 @@
 </head>
 
 <body>
-<header>
+
   <div class="navi">
-    <button><a href="Home.html"><h1>Zurück</h1></a></button>
-    <button><a href="Ausreden.html"><h1>Ausreden</h1></a></button>
-    <button><a href="Generator.html"><h1>Generator</h1></a></button>
+    <button id="myButton">Ausreden</button>
+
+    <script>
+    document.getElementById("myButton").addEventListener("click", function() {
+      window.location.href = "Ausreden.html";
+    }); 
+    </script>
   </div>
 
   <div class="content">
@@ -82,7 +86,8 @@
        <img src="bilder/boy.jpg" alt="junge">
      </div>
   </div>
-</header>
+
+
 
 </body>
 </html>

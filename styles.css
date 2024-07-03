@@ -10,6 +10,10 @@ body {
     padding: 20px; /* Reduzierung des Abstands für bessere Proportionen */
     font-size: 30px; /* Reduzierung der Schriftgröße für bessere Lesbarkeit */
     text-align: right; /* Änderung von 'end' zu 'right' für bessere Kompatibilität */
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+
   }
 
   .content {
@@ -27,11 +31,11 @@ body {
 
   button {
     background-color: #FFE4B5;
-    color:aqua;
+    color: grey;
     padding: 15px 25px; /* Anpassung der Polsterung für ein ausgewogeneres Aussehen */
     border: none;
     border-radius: 5px;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;

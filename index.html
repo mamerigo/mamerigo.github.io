@@ -42,9 +42,13 @@
    
   <p>Hier findet ihr die <b>besten Ausreden</b> für Schüler*innen!!</p>
   
-  <button>
-    <a href="Home.html">Auf gehts!</a> 
-  </button>
-  
+
+  <button id="myButton">Zur anderen Seite</button>
+
+<script>
+document.getElementById("myButton").addEventListener("click", function() {
+  window.location.href = "Home.html";
+});
+</script>
 </body>
 </html>

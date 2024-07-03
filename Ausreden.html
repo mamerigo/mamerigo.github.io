@@ -11,7 +11,7 @@
     
     .navi {
       background-color: #FF6347;
-      padding: 20px; /* Reduzierung des Abstands für bessere Proportionen */
+      padding: 20px; 
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -32,7 +32,7 @@
 
     button {
       background-color: #FFE4B5;
-      color: aqua;
+      color: grey;
       padding: 15px 25px; /* Anpassung der Polsterung für ein ausgewogeneres Aussehen */
       border: none;
       border-radius: 5px;
@@ -71,9 +71,21 @@
   <div class="navi">
     <img src="bilder/Bild 15.03.24 um 20.14 2.jpg" alt="">
     <div class="buttoncontainer"> 
-      <button>Home<a href="Home.html"></a></button>
-      <button>Ausreden<a href="Ausreden.html"></a></button>
-      <button>Generator<a href="Generator.html"></a></button>
+    
+      <button id="myButton1">Home</button>
+
+      <script>
+      document.getElementById("myButton1").addEventListener("click", function() {
+        window.location.href = "Home.html";
+      });
+      </script>
+      <button id="myButton">Generator</button>
+      <script>
+      document.getElementById("myButton").addEventListener("click", function() {
+      window.location.href = "Generator.html";
+      });
+      </script>
+
     </div>
     </div>
 
@@ -109,6 +121,7 @@
     
   </div>
 </header>
+
 
 </body>
 </html>
