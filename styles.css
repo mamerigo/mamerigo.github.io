@@ -1,18 +1,18 @@
 body {
-    background: whitesmoke;
-    background-color: Cornsilk;
+    background: 343A40;
+    background-color: 343A40;
     color: #182f33;
     margin: 0;
   }
   
   .navi {
-    background-color: #FF6347;
-    padding: 20px; /* Reduzierung des Abstands für bessere Proportionen */
-    font-size: 30px; /* Reduzierung der Schriftgröße für bessere Lesbarkeit */
-    text-align: right; /* Änderung von 'end' zu 'right' für bessere Kompatibilität */
-    justify-content: flex-end;
-    align-items: center;
+    background-color: 212529;
+    padding: 15px; 
     display: flex;
+    justify-content: space-between;
+    align-items: left;
+    font-size: 30px;
+
 
   }
 
@@ -24,14 +24,15 @@ body {
   }
   
   img {
-    width: 700px;
+    width: 100px;
     height: auto;
     border-radius: 20px;
+    text-align: left;
   }
 
   button {
-    background-color: #FFE4B5;
-    color: grey;
+    background-color: 495057;
+    color: white;
     padding: 15px 25px; /* Anpassung der Polsterung für ein ausgewogeneres Aussehen */
     border: none;
     border-radius: 5px;
@@ -41,7 +42,7 @@ body {
     font-size: 16px;
     margin: 10px; /* Erhöhung des Abstands für bessere Trennung der Buttons */
     cursor: pointer;
-    box-shadow: 4px 2px 5px red;
+    box-shadow: 4px 2px 5px black;
   }
 
   button:hover {
@@ -51,7 +52,8 @@ body {
   h1 {
     font-size: large;
     color: #182f33;
-    background-color: #FFE4B5;
+    display: flex;
+    text-align: center;
   }
 
   p {
@@ -61,6 +63,32 @@ body {
 
   #image-container {
       display: flex;
-      justify-content: center; /* Zentrierung des Bildcontainers */
+      justify-content: start; /* Zentrierung des Bildcontainers */
       margin-top: 20px; /* Abstand nach oben für bessere Darstellung */
+  }
+  .buttoncontainer {
+    margin-top: 15px;
+
+  }
+  #generateButton {
+    background-color: 6C757D;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  #generateButton:hover {
+    background-color: ADB5BD;
+  }
+  
+  #excuseOutput {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: CED4DA;
+    border-radius: 5px;
   }

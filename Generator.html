@@ -1,0 +1,199 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+
+<body>
+
+  <div class="navi">
+    <img src="bilder/Bild 15.03.24 um 20.14 2.jpg" alt="">
+    <div class="buttoncontainer"> 
+      <button id="myButton1">Ausreden</button>
+
+      <script>
+      document.getElementById("myButton1").addEventListener("click", function() {
+        window.location.href = "Ausreden.html";
+      }); 
+
+      </script>
+            <button id="myButton2">Über uns</button>
+
+            <script>
+            document.getElementById("myButton2").addEventListener("click", function() {
+              window.location.href = "überUns.html";
+            }); 
+            
+            </script>
+            
+            <button id="myButton4">Zurück</button>
+            <script>
+            document.getElementById("myButton4").addEventListener("click", function() {
+            window.location.href = "Home.html";
+            });
+            </script>
+            
+            
+          
+    </div>
+   
+  </div>
+
+  <div class="content">
+    <button id="generateButton">Generiere Ausrede</button>
+    <p id="excuseOutput"></p>
+    <!-- Rest Ihres Contents -->
+    <button id="generateCrazyButton">Generiere verrückte Ausrede</button>
+    <p id="crazyExcuseOutput"></p>
+  </div>
+     
+  </div>
+
+  <script>
+    // Array mit möglichen Ausreden
+    const excuses = [
+    "Mein Hund hat meine Hausaufgaben gefressen.",
+        "Mein Computer ist abgestürzt und ich habe alles verloren.",
+        "Ich habe meine Hausaufgaben im Bus vergessen.",
+        "Meine kleine Schwester hat meine Hausaufgaben bemalt.",
+        "Mein Drucker hatte keine Tinte mehr.",
+        "Ich war krank und konnte die Hausaufgaben nicht machen.",
+        "Ich musste mich um ein Familienmitglied kümmern.",
+        "Ich hatte einen Arzttermin.",
+        "Mein Wecker hat nicht geklingelt.",
+        "Ich habe die Hausaufgaben in der Schule vergessen.",
+        "Ich hatte technische Probleme mit meinem Laptop.",
+        "Ich war bei einem Sportwettkampf und hatte keine Zeit.",
+        "Meine Katze hat auf meine Hausaufgaben gekotzt.",
+        "Ich habe aus Versehen das falsche Buch zur Schule gebracht.",
+        "Ich hatte keine Internetverbindung.",
+        "Ich habe versehentlich Wasser über meine Hausaufgaben geschüttet.",
+        "Ich habe die Hausaufgaben mit den falschen Antworten weggeschmissen.",
+        "Ich habe die Aufgabe falsch verstanden.",
+        "Ich hatte Kopfschmerzen und konnte mich nicht konzentrieren.",
+        "Ich habe die Hausaufgaben jemand anderem gegeben.",
+        "Ich habe das Datum falsch notiert.",
+        "Ich habe die Hausaufgaben zu Hause vergessen.",
+        "Ich musste Überstunden machen.",
+        "Mein Freund hat mir gesagt, wir hätten keine Hausaufgaben.",
+        "Ich hatte einen Notfall zu Hause.",
+        "Ich war in einer anderen Stadt.",
+        "Mein Internetanbieter hatte eine Störung.",
+        "Ich musste für eine andere Prüfung lernen.",
+        "Ich habe auf dem Weg zur Schule meine Tasche verloren.",
+        "Ich habe den USB-Stick mit den Hausaufgaben verloren.",
+        "Mein Fahrrad hatte einen Platten und ich musste es reparieren.",
+        "Ich war beim Zahnarzt.",
+        "Ich habe aus Versehen die falschen Seiten gemacht.",
+        "Ich hatte einen Stromausfall zu Hause.",
+        "Ich habe die Seite mit den Hausaufgaben nicht gefunden.",
+        "Ich habe die Hausaufgaben gemacht, aber sie nicht eingepackt.",
+        "Mein Bruder hat meine Hausaufgaben zerrissen.",
+        "Ich war im Krankenhaus.",
+        "Ich musste bei einem Umzug helfen.",
+        "Mein Freund hat meine Hausaufgaben versehentlich mitgenommen.",
+        "Ich habe mein Hausaufgabenheft verloren.",
+        "Mein Handy ist ins Wasser gefallen und war nicht benutzbar.",
+        "Ich habe das Projekt nicht verstanden und konnte es nicht machen.",
+        "Ich habe die Hausaufgaben gemacht, aber sie sind verschwunden.",
+        "Ich hatte Besuch von Verwandten und keine Zeit.",
+        "Ich habe meine Brille verloren und konnte nicht lesen.",
+        "Ich habe die falsche Datei hochgeladen.",
+        "Ich habe die E-Mail mit den Hausaufgaben gelöscht.",
+        "Ich habe die Aufgabe auf dem falschen Blatt gemacht.",
+        "Ich habe meine Hausaufgaben zu Hause gelassen.",
+        "Ich hatte einen wichtigen Familienanlass.",
+        "Ich musste meinen kleinen Bruder babysitten.",
+        "Ich habe einen Albtraum gehabt und konnte nicht schlafen.",
+        "Ich habe mich beim Datum vertan.",
+        "Ich habe den falschen Ordner mitgebracht.",
+        "Ich war bei einem Vorstellungsgespräch.",
+        "Ich hatte einen Unfall und konnte nicht zur Schule kommen.",
+        "Ich habe das Passwort für meinen Computer vergessen.",
+        "Ich habe die Aufgabe zu schwer gefunden.",
+        "Ich musste für einen Freund einspringen.",
+        "Ich hatte Magenprobleme und konnte nicht arbeiten.",
+        "Ich habe die Aufgabe in der falschen Sprache gemacht.",
+        "Ich habe den Bus verpasst und musste zu Fuß gehen.",
+        "Ich habe mein Buch im Schulschließfach vergessen.",
+        "Ich habe die Anweisungen nicht verstanden.",
+        "Ich habe mein Ladegerät verloren und konnte nicht arbeiten.",
+        "Ich hatte eine andere wichtige Verpflichtung.",
+        "Ich habe mein Heft zu Hause gelassen.",
+        "Mein Haustier ist krank geworden.",
+        "Ich habe verschlafen.",
+        "Ich habe die E-Mail mit den Hausaufgaben nicht bekommen.",
+        "Ich hatte Probleme mit der Software.",
+        "Ich habe aus Versehen die falsche Seite aus dem Buch gemacht.",
+        "Ich habe einen Freund getroffen und die Zeit vergessen.",
+        "Ich habe die Aufgabe zu spät bemerkt.",
+        "Ich habe das Buch verloren.",
+        "Ich habe die Seite mit den Hausaufgaben herausgerissen.",
+        "Ich hatte einen Streit zu Hause und konnte mich nicht konzentrieren.",
+        "Ich habe mich um mein Haustier kümmern müssen.",
+        "Ich habe mein Notebook in der Schule gelassen.",
+        "Ich hatte technische Schwierigkeiten.",
+        "Ich habe die Aufgabe nicht verstanden und konnte keine Hilfe bekommen.",
+        "Ich habe die Hausaufgaben im Schließfach vergessen.",
+        "Ich habe meine Hausaufgaben auf dem Weg zur Schule fallen gelassen.",
+        "Ich habe den Stromstecker meines Laptops verloren.",
+        "Ich musste meinen Eltern helfen.",
+        "Ich habe mich verletzt und konnte nicht schreiben.",
+        "Ich hatte einen wichtigen Termin.",
+        "Ich habe das Blatt mit den Hausaufgaben nicht gefunden.",
+        "Ich habe die Aufgabe zu schwierig gefunden.",
+        "Ich habe mich um ein kranken Freund kümmern müssen.",
+        "Ich habe mein Passwort für das Schulportal vergessen.",
+        "Ich habe die Hausaufgaben gelöscht.",
+        "Ich hatte eine andere schulische Verpflichtung.",
+        "Ich habe die Seite mit den Anweisungen verloren.",
+        "Ich habe meine Notizen zu Hause gelassen.",
+        "Ich habe die Aufgabe in der Schule gemacht, aber sie verloren.",
+        "Ich habe mein Heft im Auto vergessen.",
+        "Ich habe die Hausaufgaben mit anderen Papieren vermischt.",
+        "Ich hatte eine Verstopfung und konnte nicht arbeiten.",
+        "Ich habe mich um ein verletztes Tier gekümmert.",
+        "Ich habe einen wichtigen Anruf bekommen und die Zeit vergessen."
+    ];
+  
+    // Funktion zum Generieren einer zufälligen Ausrede
+    function generateExcuse() {
+      const randomIndex = Math.floor(Math.random() * excuses.length);
+      return excuses[randomIndex];
+    }
+  
+    // Event Listener für den Button
+    document.getElementById("generateButton").addEventListener("click", function() {
+      const excuse = generateExcuse();
+      document.getElementById("excuseOutput").textContent = excuse;
+    });
+  </script>
+<script>
+    // Array mit verrückten, absurden Ausreden
+    const crazyExcuses = [
+      "Ein Zeitreisender aus der Zukunft hat mich gebeten, die Welt zu retten.",
+      "Meine Katze hat sich als außerirdischer Spion entpuppt und ich musste sie zur Raumstation zurückbringen.",
+      "Ich wurde von einer Horde tanzender Pinguine in der U-Bahn aufgehalten.",
+      "Mein Toaster hat sich in ein Portal zu einer Paralleldimension verwandelt.",
+      "Ich musste dringend meine Sammlung unsichtbarer Steine neu sortieren.",
+      "Ein Schwarm fliegender Fische hat mein Auto entführt.",
+      "Ich wurde von einem sprechenden Baum zu einer philosophischen Debatte herausgefordert.",
+      "Meine Socken haben sich zu einer Rockband zusammengeschlossen und gaben ihr Debütkonzert.",
+      "Ich musste einem Einhorn beim Umzug helfen.",
+      "Mein Schatten hat sich selbstständig gemacht und ich musste ihn einfangen."
+    ];
+  
+    // Funktion zum Generieren einer zufälligen verrückten Ausrede
+    function generateCrazyExcuse() {
+      const randomIndex = Math.floor(Math.random() * crazyExcuses.length);
+      return crazyExcuses[randomIndex];
+    }
+  
+    // Event Listener für den Button
+    document.getElementById("generateCrazyButton").addEventListener("click", function() {
+      const crazyExcuse = generateCrazyExcuse();
+      document.getElementById("crazyExcuseOutput").textContent = crazyExcuse;
+    });
+    </script>
+</body>
+</html>
