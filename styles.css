@@ -1,7 +1,7 @@
 body {
     background: 343A40;
     background-color: 343A40;
-    color: #182f33;
+    color: white;
     margin: 0;
   }
   
@@ -9,26 +9,22 @@ body {
     background-color: 212529;
     padding: 15px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: left;
     font-size: 30px;
+    
 
 
   }
 
   .content {
-    text-align: center;
+    text-align: start;
     font-family: serif;
     padding: 30px;
     font-size: large;
   }
   
-  img {
-    width: 100px;
-    height: auto;
-    border-radius: 20px;
-    text-align: left;
-  }
+  
 
   button {
     background-color: 495057;
@@ -43,6 +39,7 @@ body {
     margin: 10px; /* Erhöhung des Abstands für bessere Trennung der Buttons */
     cursor: pointer;
     box-shadow: 4px 2px 5px black;
+    margin-top: 10px;
   }
 
   button:hover {
@@ -67,7 +64,7 @@ body {
       margin-top: 20px; /* Abstand nach oben für bessere Darstellung */
   }
   .buttoncontainer {
-    margin-top: 15px;
+   
 
   }
   #generateButton {
@@ -89,6 +86,26 @@ body {
     font-size: 20px;
     margin-top: 20px;
     padding: 10px;
-    background-color: CED4DA;
+    background-color: 343A40;
     border-radius: 5px;
+  }
+  #generateCrazyButton {
+    background-color: 6C757D;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  #crazyExcuseOutput {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: 343A40;
+    border-radius: 5px;
+  }
+  #generateCrazyButton:hover {
+    background-color: ADB5BD;
   }
