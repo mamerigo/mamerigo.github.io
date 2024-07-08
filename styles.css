@@ -51,11 +51,10 @@ body {
     margin-right: auto;
     margin-top: 23px;
   }
-
-  p {
-      margin-bottom: 10px; /* Hinzufügen von Abstand zwischen den Absätzen */
-      font-size: 17px;
+  p{
+  font-size: large;
   }
+  
 
 
   
@@ -69,6 +68,10 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin: 20px 0;
+    display: flex;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
   }
   
   #generateButton:hover {
@@ -81,6 +84,10 @@ body {
     padding: 10px;
     background-color: 343A40;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   #generateCrazyButton {
     background-color: 6C757D;
@@ -91,6 +98,8 @@ body {
     cursor: pointer;
     font-size: 16px;
     margin: 20px 0;
+    display: block;
+    margin: 0 auto;
   }
   #crazyExcuseOutput {
     font-size: 20px;
@@ -98,19 +107,184 @@ body {
     padding: 10px;
     background-color: 343A40;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   #generateCrazyButton:hover {
     background-color: ADB5BD;
   }
   img {
- width: 100px;
- margin-right: auto;
- margin-top: 0px;
- margin-bottom: auto;
+  width: 100px;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: auto;
   }
-  .Boyimage {
-    width: 100%;
+
+  .content-section {
+    padding: 80px 0;
+    background-color: 343A40;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h2 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+    margin-bottom: 15px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-content {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image-content img {
+    max-width: 100%;
     height: auto;
-    max-height: 600px;
-    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 500px;
   }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+    
+    .image-content {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  .site-footer {
+    background-color: 343A40;
+    padding: 40px 0;
+    margin-top: 60px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-section h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .contact-section p {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .email-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .email-button:hover {
+    background-color: #0056b3;
+  }
+
+  .site-footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 60px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .social-links {
+    text-align: center;
+  }
+
+  .social-links h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons li {
+    margin: 0 10px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background-color: #007bff;
+  }
+
+  
