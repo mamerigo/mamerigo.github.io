@@ -3,6 +3,8 @@ body {
     background-color: 343A40;
     color: white;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
   }
   
   .navi {
@@ -10,18 +12,14 @@ body {
     padding: 15px; 
     display: flex;
     justify-content: end;
-    align-items: left;
     font-size: 30px;
-    
-
-
   }
 
   .content {
     text-align: start;
-    font-family: serif;
-    padding: 30px;
-    font-size: large;
+    font-size: small;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   
@@ -48,25 +46,20 @@ body {
 
   h1 {
     font-size: large;
-    color: #182f33;
-    display: flex;
-    text-align: center;
+    color: white;
+    align-items: left;
+    margin-right: auto;
+    margin-top: 23px;
   }
 
   p {
       margin-bottom: 10px; /* Hinzufügen von Abstand zwischen den Absätzen */
-      font-size: 25px;
+      font-size: 17px;
   }
 
-  #image-container {
-      display: flex;
-      justify-content: start; /* Zentrierung des Bildcontainers */
-      margin-top: 20px; /* Abstand nach oben für bessere Darstellung */
-  }
-  .buttoncontainer {
-   
 
-  }
+  
+  
   #generateButton {
     background-color: 6C757D;
     color: white;
@@ -108,4 +101,16 @@ body {
   }
   #generateCrazyButton:hover {
     background-color: ADB5BD;
+  }
+  img {
+ width: 100px;
+ margin-right: auto;
+ margin-top: 0px;
+ margin-bottom: auto;
+  }
+  .Boyimage {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
   }
