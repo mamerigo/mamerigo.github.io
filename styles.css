@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: end;
     font-size: 30px;
+    margin-top: 30px;
   }
 
   .content {
@@ -118,9 +119,11 @@ body {
   img {
   width: 100px;
   margin-right: auto;
-  margin-top: 0px;
   margin-bottom: auto;
+  margin-top: auto;
   }
+ 
+  
 
   .content-section {
     padding: 80px 0;
@@ -182,6 +185,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     width: 500px;
+    margin-top: 55px;
   }
   
   @media (max-width: 768px) {
@@ -195,15 +199,9 @@ body {
     }
   }
   .site-footer {
-    background-color: 343A40;
+    background-color: 212529;
     padding: 40px 0;
     margin-top: 60px;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
   }
 
   .contact-section {
@@ -211,20 +209,20 @@ body {
   }
 
   .contact-section h3 {
-    color: #333;
+    color: whitesmoke;
     font-size: 24px;
     margin-bottom: 15px;
   }
 
   .contact-section p {
-    color: #333;
+    color: whitesmoke;
     margin-bottom: 20px;
   }
 
   .email-button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: grey;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -233,14 +231,9 @@ body {
   }
 
   .email-button:hover {
-    background-color: #0056b3;
+    background-color: whitesmoke;
   }
 
-  .site-footer {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-    margin-top: 60px;
-  }
 
   .container {
     max-width: 1200px;
@@ -253,7 +246,7 @@ body {
   }
 
   .social-links h3 {
-    color: #333;
+    color: whitesmoke;
     font-size: 24px;
     margin-bottom: 20px;
   }
@@ -284,7 +277,7 @@ body {
   }
 
   .social-icons a:hover {
-    background-color: #007bff;
+    background-color: whitesmoke;
   }
 
   

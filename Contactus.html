@@ -1,0 +1,144 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktiere uns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: 343A40;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .buttoncontainer {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 30px;
+            
+            
+        }
+        button {
+    background-color: 495057;
+    color: white;
+    padding: 15px 25px; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px; 
+    cursor: pointer;
+    box-shadow: 4px 2px 5px black;
+    
+  }
+  button:hover {
+    background-color: cornsilk; /* Neue Hintergrundfarbe beim Überfahren mit der Maus */
+  }
+        
+        header {
+            background: #35424a;
+            color: white;
+            padding-top: 30px; 
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact-form {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 30px;
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-form label {
+            display: block;
+            margin: 5px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: grey;
+            color: #fff;
+            border-radius: 15px;
+            cursor: pointer;
+            align-items: center;
+
+        }
+        .contact-form button:hover {
+            background: adb5bd;
+        }
+        .contact-info {
+            background: #35424a;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kontaktiere uns</h1>     
+        </div>
+            <div class="buttoncontainer">
+                <button id="myButton4">Zurück</button>
+                <script>
+                document.getElementById("myButton4").addEventListener("click", function() {
+                window.location.href = "index.html";
+                });
+                </script> 
+            </div>
+        
+       
+    </header>
+
+    <div class="container">
+        <section class="contact-form">
+            <h2>Sende uns eine Nachricht</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Betreff:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Kontaktinformationen</h2>
+            <p>Adresse: Musterstraße 123, 12345 Musterstadt</p>
+            <p>Telefon: +49 123 456789</p>
+            <p>E-Mail: info@beispiel.de</p>
+        </section>
+    </div>
+    
+</body>
+</html>
+
